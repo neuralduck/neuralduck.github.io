@@ -3,10 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>neuralduck</title>
+
+	<title>NeuralDuck🦆</title>
+
+	<style>
+		button {
+			float: right;
+			border: none;
+			background-color: transparent;
+		}
+		body {
+  			background-color: white;
+  			color: black;
+  			text-align: center;
+		}
+		.dark-mode {
+  			background-color: black;
+  			color: white;
+		}
+		.theme-button {
+			width: 50px;
+			height: 50px;
+			padding: 1px 1px;
+		}
+	</style>
 </head>
+
 <body>
-	<h1>Hello there, <br>page is still under construction. go away.</h1>
-	<img src="./assets/choices.jpeg">
+
+	<div class='dark-mode'>
+		<button onclick="dark_mode()"><img src="./assets/darkmode.svg" class="theme-button"></button>
+	</div>
+	<div class='main-stuff'>
+		<h1>Hello there,</h1>
+		<h1>The page is still under construction. get out of here.</h1>
+		<img src="./assets/choices.jpeg">
+	</div>
+
+	<script>
+		function dark_mode() {
+   			var element = document.body;
+   			element.classList.toggle("dark-mode");
+		}
+	</script>
+
+	
 </body>
 </html>
