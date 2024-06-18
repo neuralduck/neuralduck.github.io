@@ -13,7 +13,7 @@
 			background-color: transparent;
 		}
 		body {
-  			background-color: white;
+  			background-color: #F5F5F5;
   			color: black;
   			text-align: left;
   			font-family: Arial, sans-serif;
@@ -27,6 +27,15 @@
 			height: 50px;
 			padding: 1px 1px;
 		}
+		.main-stuff, .additional-stuff {
+  			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  			border-radius: 10px;
+  			padding: 10px;
+ 			transition: 0.3s;
+		}
+		.main-stuff:hover {
+  			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
 	</style>
 </head>
 
@@ -35,14 +44,15 @@
 	<div class='dark-mode'>
 		<button onclick="dark_mode()"><img src="./assets/darkmode.svg" class="theme-button"></button>
 	</div>
+	<h1 style="background-color: #03A9F4;padding: 10px; color: white;">Hello there!</h1>
 	<div class='main-stuff'>
-		<h1>Hello there,</h1>
-		<h3>My stuff: </h3>
+		<h2>My stuff: </h2>
 		<h3><a href="https://medium.com/@theneuralduck">Blog</a></h3>
 		<h3><a href="https://github.com/neuralduck">Github</a></h3>
 		<h3><a href="https://www.linkedin.com/in/hariharan-sj-0a2255166/">LinkedIn</a></h3>
 		<h3><a href="https://www.instagram.com/hariharansj/">instagram</a></h3>
-		<hr>
+	</div>
+	<div class='additional-stuff'>
 		<h3>meme:</h3>
 		<img src="./assets/choices.jpeg" style="width:auto;height:auto;max-width:50%;max-height:50%;">
 		<a href="./memes.html">more memes</a>
