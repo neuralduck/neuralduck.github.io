@@ -6,26 +6,13 @@
 
 	<title>NeuralDuck</title>
 	<link rel="icon" type="image/x-icon" href="./assets/duck (1).svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		button {
-			float: right;
-			border: none;
-			background-color: transparent;
-		}
 		body {
   			background-color: #F5F5F5;
   			color: black;
   			text-align: left;
   			font-family: Arial, sans-serif;
-		}
-		.dark-mode {
-  			background-color: black;
-  			color: white;
-		}
-		.theme-button {
-			width: 50px;
-			height: 50px;
-			padding: 1px 1px;
 		}
 		.main-stuff, .additional-stuff {
   			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -33,38 +20,24 @@
   			padding: 10px;
  			transition: 0.3s;
 		}
-		.main-stuff:hover {
+		.main-stuff:hover, .additional-stuff:hover {
   			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 		}
 	</style>
 </head>
-
-<body>
-
-	<div class='dark-mode'>
-		<button onclick="dark_mode()"><img src="./assets/darkmode.svg" class="theme-button"></button>
-	</div>
-	<h1 style="background-color: #03A9F4;padding: 10px; color: white;">Hello there!</h1>
-	<div class='main-stuff'>
-		<h2>My stuff: </h2>
-		<h3><a href="https://medium.com/@theneuralduck">Blog</a></h3>
-		<h3><a href="https://github.com/neuralduck">Github</a></h3>
-		<h3><a href="https://www.linkedin.com/in/hariharan-sj-0a2255166/">LinkedIn</a></h3>
-		<h3><a href="https://www.instagram.com/hariharansj/">instagram</a></h3>
-	</div>
-	<div class='additional-stuff'>
-		<h3>meme:</h3>
-		<img src="./assets/choices.jpeg" style="width:auto;height:auto;max-width:50%;max-height:50%;">
-		<a href="./memes.html">more memes</a>
-	</div>
-
-	<script>
-		function dark_mode() {
-   			var element = document.body;
-   			element.classList.toggle("dark-mode");
-		}
-	</script>
-
-	
-</body>
+	<body>
+		<h1 style="background-color: #03A9F4;padding: 10px; color: white;">Hello there!</h1>
+		<div class='main-stuff'>
+			<h2>My stuff: </h2>
+			<h3><i class="fa fa-pencil"></i> <a href="https://medium.com/@theneuralduck">Blog</a></h3>
+			<h3><i class="fa fa-github"></i> <a href="https://github.com/neuralduck">Github</a></h3>
+			<h3><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/hariharan-sj-0a2255166/">LinkedIn</a></h3>
+			<h3><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/hariharansj/">instagram</a></h3>
+		</div>
+		<div class='additional-stuff'>
+			<h3>meme:</h3>
+			<img src="./assets/choices.jpeg" style="width:auto;height:auto;max-width:50%;max-height:50%;">
+			<a href="./memes.html">more memes</a>
+		</div>
+	</body>
 </html>
